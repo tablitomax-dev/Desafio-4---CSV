@@ -1,0 +1,8 @@
+[theme]
+base = "light"
+primaryColor = "#007AFF"
+backgroundColor = "#F5F5F7"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#1D1D1F"
+# Modo escuro: aplicado em tempo de execucao via CSS (styles.py), mantendo o
+# tema de startup claro. Usa a mesma paleta neutra para ambos os modos.

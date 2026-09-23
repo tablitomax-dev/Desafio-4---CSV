@@ -1,0 +1,12 @@
+# Excluir tooling FIRE e framework — não faz parte da nossa base de código
+.specsmd/
+.agent/
+.trae/
+
+# Artefatos de build/sistema
+pyproject.toml
+uv.lock
+.coverage
+
+# Saída do próprio graphify
+graphify-out/

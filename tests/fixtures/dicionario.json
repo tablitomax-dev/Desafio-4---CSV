@@ -1,0 +1,64 @@
+{
+  "tabelas": [
+    {
+      "nome": "notas_fiscais",
+      "fonte": "nf_cabecalho.csv",
+      "colunas": [
+        { "origem": "CHAVE DE ACESSO", "canonico": "chave_acesso", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "MODELO", "canonico": "modelo", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "SÉRIE", "canonico": "serie", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NÚMERO", "canonico": "numero", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NATUREZA DA OPERAÇÃO", "canonico": "natureza_operacao", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "DATA EMISSÃO", "canonico": "data_emissao", "tipo": "data", "fuzzy_permitido": false, "regra_parse": "dd/mm/yyyy", "regra_busca": "exato", "agregavel": true },
+        { "origem": "EVENTO MAIS RECENTE", "canonico": "evento_mais_recente", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "DATA/HORA EVENTO MAIS RECENTE", "canonico": "data_evento_mais_recente", "tipo": "datetime", "fuzzy_permitido": false, "regra_parse": "dd/mm/yyyy hh:mm:ss", "regra_busca": "exato", "agregavel": false },
+        { "origem": "CPF/CNPJ Emitente", "canonico": "cpf_cnpj_emitente", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "RAZÃO SOCIAL EMITENTE", "canonico": "razao_social_emitente", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": false },
+        { "origem": "INSCRIÇÃO ESTADUAL EMITENTE", "canonico": "inscricao_estadual_emitente", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "UF EMITENTE", "canonico": "uf_emitente", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "MUNICÍPIO EMITENTE", "canonico": "municipio_emitente", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": true },
+        { "origem": "CNPJ DESTINATÁRIO", "canonico": "cnpj_destinatario", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NOME DESTINATÁRIO", "canonico": "nome_destinatario", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": false },
+        { "origem": "UF DESTINATÁRIO", "canonico": "uf_destinatario", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "INDICADOR IE DESTINATÁRIO", "canonico": "indicador_ie_destinatario", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "DESTINO DA OPERAÇÃO", "canonico": "destino_operacao", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "CONSUMIDOR FINAL", "canonico": "consumidor_final", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "PRESENÇA DO COMPRADOR", "canonico": "presenca_comprador", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "VALOR NOTA FISCAL", "canonico": "valor_nota_fiscal", "tipo": "decimal", "fuzzy_permitido": false, "regra_parse": "decimal_br", "regra_busca": "nenhum", "agregavel": true }
+      ]
+    },
+    {
+      "nome": "notas_fiscais_itens",
+      "fonte": "nf_itens.csv",
+      "colunas": [
+        { "origem": "CHAVE DE ACESSO", "canonico": "chave_acesso", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "MODELO", "canonico": "modelo", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "SÉRIE", "canonico": "serie", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NÚMERO", "canonico": "numero", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NATUREZA DA OPERAÇÃO", "canonico": "natureza_operacao", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "DATA EMISSÃO", "canonico": "data_emissao", "tipo": "data", "fuzzy_permitido": false, "regra_parse": "dd/mm/yyyy", "regra_busca": "exato", "agregavel": true },
+        { "origem": "CPF/CNPJ Emitente", "canonico": "cpf_cnpj_emitente", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "RAZÃO SOCIAL EMITENTE", "canonico": "razao_social_emitente", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": false },
+        { "origem": "INSCRIÇÃO ESTADUAL EMITENTE", "canonico": "inscricao_estadual_emitente", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "UF EMITENTE", "canonico": "uf_emitente", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "MUNICÍPIO EMITENTE", "canonico": "municipio_emitente", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": true },
+        { "origem": "CNPJ DESTINATÁRIO", "canonico": "cnpj_destinatario", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NOME DESTINATÁRIO", "canonico": "nome_destinatario", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": false },
+        { "origem": "UF DESTINATÁRIO", "canonico": "uf_destinatario", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "INDICADOR IE DESTINATÁRIO", "canonico": "indicador_ie_destinatario", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "DESTINO DA OPERAÇÃO", "canonico": "destino_operacao", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "CONSUMIDOR FINAL", "canonico": "consumidor_final", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "PRESENÇA DO COMPRADOR", "canonico": "presenca_comprador", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "NÚMERO PRODUTO", "canonico": "numero_produto", "tipo": "identificador", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "DESCRIÇÃO DO PRODUTO/SERVIÇO", "canonico": "descricao_produto_servico", "tipo": "texto", "fuzzy_permitido": true, "regra_parse": null, "regra_busca": "fuzzy_controlado", "agregavel": false },
+        { "origem": "CÓDIGO NCM/SH", "canonico": "codigo_ncm_sh", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "NCM/SH (TIPO DE PRODUTO)", "canonico": "ncm_sh_tipo_produto", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "CFOP", "canonico": "cfop", "tipo": "codigo", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": true },
+        { "origem": "QUANTIDADE", "canonico": "quantidade", "tipo": "decimal", "fuzzy_permitido": false, "regra_parse": "decimal_br", "regra_busca": "nenhum", "agregavel": true },
+        { "origem": "UNIDADE", "canonico": "unidade", "tipo": "categoria", "fuzzy_permitido": false, "regra_parse": null, "regra_busca": "exato", "agregavel": false },
+        { "origem": "VALOR UNITÁRIO", "canonico": "valor_unitario", "tipo": "decimal", "fuzzy_permitido": false, "regra_parse": "decimal_br", "regra_busca": "nenhum", "agregavel": true },
+        { "origem": "VALOR TOTAL", "canonico": "valor_total", "tipo": "decimal", "fuzzy_permitido": false, "regra_parse": "decimal_br", "regra_busca": "nenhum", "agregavel": true }
+      ]
+    }
+  ]
+}
