@@ -1,0 +1,23 @@
+# Secrets — nunca commitados
+.env
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Dados gerados / banco
+data/
+*.duckdb
+
+# Cache Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# Grafo de conhecimento gerado (graphify)
+graphify-out/
