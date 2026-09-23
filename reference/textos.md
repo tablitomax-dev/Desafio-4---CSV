@@ -1,0 +1,1 @@
+Esperada Situação list_tables ✅ coberta por esquema() describe_table ✅ coberta por esquema() run_sql ✅ consultar() sample_data ❌ não existe apply_filters ❌ não existe (filtros vão como texto no contexto, não como tool) validate_chartspec ⚠️ não é tool — é validação determinística em guardrails.py
